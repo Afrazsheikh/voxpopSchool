@@ -1,0 +1,192 @@
+// .coustom_text {
+//     font-size: 35px !important;
+// }
+
+// .box_shadow {
+//     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+//     padding: 80px 0;
+// }
+
+// .image_box {
+//     width: 18rem;
+//     height: 18rem;
+//     border-radius: 157px;
+//     overflow: hidden;
+// }
+
+// .image_box::after {
+//     content: "";
+//     position: absolute;
+//     width: 12rem;
+//     height: 12rem;
+//     background-color: #f299c5;
+//     transform: translate(-129px, -61px);
+//     z-index: 1;
+//     border-radius: 100px;
+// }
+
+// .height_width {
+//     width: -webkit-fill-available;
+//     height: -webkit-fill-available;
+//     position: relative;
+//     z-index: 2;
+// }
+
+// .circle_box {
+//     height: 4.5rem;
+//     width: 4.5rem;
+//     border-radius: 50px;
+//     background: #886cb6;
+//     margin-left: auto;
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//     transform: translate(-62px, 1px);
+
+// }
+
+// // modal
+// .btn-close {
+//   position: absolute;
+//   top: 20px;
+//   right: 20px;
+//   z-index: 1;
+//   box-shadow: none;
+// }
+
+
+// .form-group {
+//     margin-bottom: 14px;
+// }
+
+// form-control {
+//     height: 42px;
+//     padding: 0 12px;
+//     border: solid #C9C9C9;
+//     border-width: 1px;
+//     display: block;
+//     border-radius: 0;
+//     -webkit-box-shadow: none;
+//     box-shadow: none;
+//     width: 100%;
+//     -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+//     transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+//     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+//     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+// }
+
+// .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+//     opacity: 1;
+// }
+
+// .mfp-fade.mfp-wrap .mfp-content {
+//     opacity: 0;
+//     -webkit-transition: all 0.2s ease-out;
+//     transition: all 0.2s ease-out;
+// }
+
+// .mfp-close-style .mfp-close {
+//     width: 44px;
+//     height: 44px;
+//     font-size: 40px;
+//     background-color: #EA583F;
+//     opacity: 1;
+//     color: #fff;
+//     top: -14px;
+//     right: -11px;
+// }
+
+// @media (max-width: 768px) {
+//   .projects__decor {
+//     .projects__i-lines-green {
+//       display: none;
+//     }
+//   }
+// }
+
+/* Add the following styles at the end of your existing CSS */
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .coustom_text {
+    font-size: 24px !important; /* Reduce the font size for the main title */
+  }
+
+  .box_shadow {
+    padding: 40px 0; /* Reduce the padding to avoid overlap */
+  }
+
+  .image_box {
+    width: 14rem; /* Reduce the image box size */
+    height: 14rem;
+    border-radius: 100px; /* Make the image box circular */
+  }
+
+  .image_box::after {
+    width: 8rem; /* Adjust the size of the background circle */
+    height: 8rem;
+    transform: translate(-65px, -31px); /* Adjust the position of the background circle */
+  }
+
+  .height_width {
+    width: 100%;
+    height: auto; /* Adjust the image size to fit the container */
+    border-radius: 100px; /* Make the image circular */
+  }
+
+  .position-relative {
+    margin-top: 20px; /* Add some margin to separate the header from the content */
+  }
+
+  .modal-content {
+    padding: 20px; /* Reduce the padding for the modal content */
+  }
+
+  .modal__title h4 {
+    font-size: 24px; /* Reduce the modal title font size */
+  }
+
+  .modal__decor {
+    display: none; /* Hide the decorative elements in the modal */
+  }
+
+  .modal-header {
+    display: none; /* Hide the modal header */
+  }
+
+  .modal-dialog {
+    margin: 10px; /* Add some margin to the modal */
+  }
+
+  .modal__bg {
+    display: none; /* Hide the modal background */
+  }
+
+  .btn-close {
+    top: 10px;
+    right: 10px; /* Adjust the position of the close button */
+  }
+}
+
+
+
+/* Add the following styles at the end of your existing CSS */
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .coustom_text {
+      font-size: 24px !important; /* Reduce the font size for the main title */
+      margin: 20px 0; /* Add vertical margin to create spacing between the elements */
+    }
+  
+    .decor-left,
+    .decor-right {
+      display: none; /* Hide the decorative elements in mobile view */
+    }
+    
+    .text {
+      flex-direction: column; /* Stack the elements vertically in mobile view */
+      align-items: center; /* Center align the elements horizontally */
+    }
+  }
+  

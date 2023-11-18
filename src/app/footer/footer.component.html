@@ -1,0 +1,174 @@
+<!-- <footer>
+    <div class = "wrap mx-auto">
+      <div class = "w-100 row align-items-center justify-content-lg-between">
+          <div class = "col-auto col-sm col-lg-auto">
+              <a class =  "d-inline-block footer__logo" href = "#">
+                  <img src="assets/icons/logo.svg" alt="Avatar Logo" style="width:108px;" class="rounded-pill">
+
+              </a>
+
+          </div>
+          <div class="col-auto d-none d-lg-block">
+              <nav class = "nav-footer">
+                  <ul class="nav-footer__list">
+                      <li class="nav-footer__item">
+                      <a class = "nav-footer__link" href="#">School</a>
+                  </li>
+                  <li class="nav-footer__item">
+                      <a class = "nav-footer__link" href="#"> Projects</a>
+                  </li>
+                  <li class="nav-footer__item">
+                      <a class = "nav-footer__link" href="#"> We</a>
+                  </li>
+                  <li class="nav-footer__item">
+                      <a class = "nav-footer__link" href="#"> News</a>
+                  </li>
+                  <li class="nav-footer__item">
+                      <a class = "nav-footer__link" href="#"> Gallery</a>
+                  </li>
+                  <li class="nav-footer__item">
+                      <a class = "nav-footer__link" href="#"> Partners</a>
+                  </li>
+                  <li class="nav-footer__item">
+                      <a class = "nav-footer__link" href="#"> Contacts</a>
+                  </li>
+                  <li class="nav-footer__item">
+                      <a class = "nav-footer__link" href="#" >
+                  Committee for Education, Science and Youth Policy of the Volgograd Region
+                    </a>
+                  </li>
+                  <li class="nav-footer__item">
+                      <a class = "nav-footer__link" href="#" >Administration of Volgograd
+                  </a>
+                  </li>
+                  <li class="nav-footer__item">
+                      <a class = "nav-footer__link" href="#" >Ministry of Education of the Russian Federation </a>
+                  </li>
+                  <li class="nav-footer__item">
+                      <a class = "nav-footer__link" href="#" >
+                      Ministry of Science and Higher Education of the Russian Federation
+                    </a>
+                  </li>
+
+
+                  </ul>
+              </nav>
+          </div>
+          <div class="col-8 col-sm-5 col-lg-auto ml-auto ml-sm-0">
+
+                  <p>
+                    Volgograd, st. Tkacheva, d. 7
+                    <br>
+                    +7 (8442) 39-19-67
+                    <br>
+                    school_pokolenie@mail.ru
+                  </p>
+              <div class="d-none d-sm-block footer__created">
+                  <a href="#" target="blank" title="go to the developer site">
+                      <span class="magwai-link"></span>
+                  </a>
+              </div>
+          </div>
+          <div class="col-sm-auto text-center my-4 m-sm-0">
+              <div class="b-soc">
+                  <div class="flex-sm-column b-soc__inner">
+                    <a class="b-soc__item b-soc__item--vk insta" href="https://vk.com/generation_vlg">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a class="b-soc__item b-soc__item--yt twitter" href="https://www.youtube.com/c/%D0%A8%D0%BA%D0%BE%D0%BB%D0%B0%D0%9F%D0%BE%D0%BA%D0%BE%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a class="b-soc__item b-soc__item--fb ytube" href="https://pokolenie.eljur.ru">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 d-sm-none text-center">
+              <div class="footer__created">
+
+                      <a href="#" target="blank" title="go to the developer site">
+                          <span class="magwai-link"></span>
+                      </a>
+
+              </div>
+          </div>
+      </div>
+    </div>
+</footer> -->
+<footer class="footer">
+	<div class="wrap">
+		<div class="row align-items-center justify-content-lg-between">
+			<div class="col-auto col-sm col-lg-auto">
+				<a class="d-inline-block footer__logo" href="/">
+					<img *ngIf="apiService.headerLogo" [src]="environment.imageBaseUrl + apiService.headerLogo" alt="Logo - Generation">
+				</a>
+			</div>
+			<div class="col-auto d-none d-lg-block">
+
+	<nav class="nav-footer">
+		<ul class="nav-footer__list">
+							<!-- <li class=" nav-footer__item">
+                <a class="nav-footer__link" href="">Home</a>
+              </li> -->
+							<!-- <li class=" nav-footer__item">
+                <a class="nav-footer__link" href="/students-corner">Student Corner</a>
+              </li> -->
+							<li class=" nav-footer__item">
+                <a class="nav-footer__link" href="/AboutUS">About Us</a>
+              </li>
+						
+              <li class=" nav-footer__item">
+                <a class="nav-footer__link" href="/admission">Admissions</a>
+              </li>
+              <li class=" nav-footer__item">
+                <a class="nav-footer__link" href="/facility">Facilities</a>
+              </li>
+              <li class=" nav-footer__item">
+                <a class="nav-footer__link" href="/news">News</a>
+              </li>
+							<li class=" nav-footer__item">
+                <a class="nav-footer__link" href="/gallery">Gallery</a>
+              </li>
+              <li class=" nav-footer__item">
+                <a class="nav-footer__link" href="/careers">Careers</a>
+              </li>
+							<li class=" nav-footer__item">
+                <a class="nav-footer__link" href="/public-disclouser/">Public Mandatory Disclouser</a>
+              </li>
+							<li class="is-active nav-footer__item">
+                <a class="nav-footer__link" href="/contact">Contact Us</a>
+              </li>
+					</ul>
+	</nav>
+			</div>
+			<div class="col-8 col-sm-5 col-lg-auto ml-auto ml-sm-0">
+				<p>{{apiService.address?.street + ', ' + apiService.address?.city + ', ' +apiService.address?.state + ', ' +
+          apiService.address?.country + ', ' + apiService.address?.pincode}}
+        </p>
+				<p><a href="tel:78442391967">{{apiService.phone}}</a></p>
+				<p><a href="maito:school_pokolenie@mail.ru">{{apiService.email}}</a></p>
+			</div>
+			<div class="col-sm-auto text-center my-4 m-sm-0">
+				<div class="b-soc">
+					<div class="flex-sm-column b-soc__inner">
+            <a class="b-soc__item b-soc__item--vk insta" href="https://www.instagram.com/voxpopis/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="b-soc__item b-soc__item--fb facebook" href="https://www.facebook.com/voxpopis">
+              <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a class="b-soc__item b-soc__item--linkedin linkedin" href="https://www.linkedin.com/company/voxpop-school/">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          
+          
+            <!-- <a class="b-soc__item b-soc__item--fb ytube" href="https://pokolenie.eljur.ru">
+              <i class="fa-brands fa-youtube"></i>
+            </a> -->
+          </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>

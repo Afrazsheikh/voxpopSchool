@@ -1,0 +1,170 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~swiper/swiper-bundle.min.css";
+@import "../fontawesome-6.2.1/scss/fontawesome.scss";
+@import "../fontawesome-6.2.1/scss/solid.scss";
+@import "../fontawesome-6.2.1/scss/brands.scss";
+
+body {
+  counter-reset: myCounter;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  background-color: #4f4f4f;
+  height: 3px;
+  width: 28px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  left: 0;
+  opacity: 1;
+  transition: all 0.35s ease-out;
+  transform-origin: center center;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.b-soc__inner{
+  .insta {
+    color: rgba(188, 42, 141, 1.0);
+  }
+
+  .twitter {
+    color: rgba(29, 161, 242, 1.0);
+  }
+
+  .ytube {
+    color: rgba(255, 0, 0, 1.0);
+  }
+}
+
+.btn {
+  display:-webkit-inline-box;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+  align-items:center;
+  -webkit-box-pack:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  height:42px;
+  min-width:120px;
+  padding:0 10px;
+  text-align:center;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  font-family:"Geometria";
+  font-weight:500;
+  text-transform:uppercase;
+  letter-spacing:0.025em;
+  cursor:pointer;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  max-width: unset;
+  margin: 0;
+  padding: 0;
+  background: unset;
+}
+
+.lightbox-modal .modal-content {
+  background: var(--lightbox);
+}
+.lightbox-modal .btn-close {
+  position: absolute;
+  top: 20px;
+  right: 18px;
+  font-size: 1.2rem;
+  z-index: 10;
+  opacity: 1;
+}
+.lightbox-modal .modal-body {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+}
+.lightbox-modal img {
+  width: auto;
+  max-height: 80vh;
+  max-width: 100%;
+}
+
+.lightbox-modal {
+  .swiper-wrapper {
+    align-items: center;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    color: #e9ebf7;
+  }
+
+  .swiper-button-prev {
+    left: 60px;
+  }
+
+  .swiper-button-next {
+    right: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .lightbox-modal {
+    .swiper-button-prev, .swiper-button-next {
+      display: none;
+    }
+  }
+}
+.stages__item-text {
+  dl, ol, ul, p {
+    margin: 0 0 1rem 0;
+  }
+
+  ol, ul {
+    padding: 0 0 0 2rem;
+  }
+
+  li {
+    list-style-type: disc;
+  }
+}
+
+
+

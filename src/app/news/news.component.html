@@ -1,0 +1,65 @@
+<section class="section section--page articles overflow-hidden">
+  <span class="articles__decor">
+    <i class="articles__particle articles__particle--sq-black aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
+    </i>
+    <i class="articles__particle articles__particle--sq-yellow aos-init" data-aos="zoom-in">
+    </i>
+    <i class="articles__particle articles__particle--triangle-red aos-init" data-aos="fade-left" data-aos-delay="1200">
+    </i>
+    <i class="articles__particle articles__particle--triangle-red-2 aos-init" data-aos="fade-up-right" data-aos-delay="200">
+    </i>
+    <i class="d-none d-md-block articles__particle articles__particle--circle-lines aos-init aos-animate" data-aos="new-animation">
+    </i>
+  </span>
+  <ul class="js-scene parallax-scene articles__decor" data-relative-input="true" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+    <li class="parallax-layer" data-depth="0.1" style="transform: translate3d(-12.6px, 18.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+      <i class="articles__particle articles__particle--dot-yellow aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
+      </i>
+    </li>
+    <li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-25.2px, 36.2px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+      <i class="d-none d-md-block articles__particle articles__particle--dot-purple aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
+      </i>
+    </li>
+    <li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-25.2px, 36.2px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+      <i class="articles__particle articles__particle--dot-green aos-init" data-aos="zoom-in" data-aos-delay="300">
+      </i>
+    </li>
+    <li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-25.2px, 36.2px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+      <i class="articles__particle articles__particle--dot-green-2 aos-init" data-aos="zoom-in" data-aos-delay="300">
+      </i>
+    </li>
+  </ul>
+  <div class="wrap position-relative">
+    <h2 class="h1 text-center text-md-start articles__title">News</h2>
+    <div class="row">
+      <div class="col-lg-8">
+        <p>
+          We try to keep our visitors up to date with all the most interesting things that happen in our school.
+          This section contains all the latest and hottest news!
+        </p>
+        <br>
+    </div>
+   </div>
+    <ul class="row articles__list js-news-box">
+    <li *ngFor="let slide of schoolData" class="col-sm-6 col-lg-4 articles__item aos-init aos-animate" data-aos="fade-in" data-aos-duration="800">
+    <a class="d-flex flex-column item-news" [routerLink]="[slide._id]">
+      <div class="responsive-img flex-grow-1 item-news__img-wrap">
+        <img class="lazyload" [src]="environment.imageBaseUrl + slide.img" alt="" data-object-fit="cover">
+      </div>
+      <div class="text-center flex-shrink-0 item-news__content">
+        <time class="item-news__date" datetime="">{{slide.newsDate}}</time>
+        <div class="dot d-flex align-items-center justify-content-center item-news__title" style="overflow-wrap: break-word;">
+          <p class="news-data">{{slide.heading}}</p>
+        </div>
+        <div class="d-none d-sm-block item-news__descr"></div>
+        <div class="d-none d-sm-block item-news__more-link">More</div>
+      </div>
+    </a>
+  </li>
+</ul>
+
+   <!--  <div class="text-center">
+    <a class="btn btn--blue btn--with-line articles__show-all js-news-load aos-init" data-aos="new-animation">More news</a>
+    </div> -->
+ </div>
+</section>

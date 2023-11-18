@@ -1,0 +1,239 @@
+<!-- <div class="modal fade" id="exampleModal"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    <div class="sec-title-style1 pb-0 w-100">
+                        <div class="title">Contact Form 2
+                        </div>
+                    </div>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <section class="contact-info-area ">
+                    <div class="container p-0">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="contact-form p-3">
+                                    <div class="inner-box">
+                                        <form id="contact-form" name="contact_form" class="default-form"
+                                            action="inc/sendmail.php" method="post">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12">
+                                                    <div class="row">
+                                                        <div class="col-xl-12">
+                                                            <div class="input-box">
+                                                                <input type="text" name="form_name" value=""
+                                                                    placeholder="Name" required="">
+                                                            </div>
+                                                            <div class="input-box">
+                                                                <input type="text" name="form_phone" value=""
+                                                                    placeholder="Phone">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-12">
+                                                            <div class="input-box">
+                                                                <input type="email" name="form_email" value=""
+                                                                    placeholder="Email" required="">
+                                                            </div>
+                                                            <div class="input-box">
+                                                                <input type="text" name="form_website" value=""
+                                                                    placeholder="Website">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xl-12">
+                                                            <div class="input-box">
+                                                                <input type="text" name="form_subject" value=""
+                                                                    placeholder="Subject">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12">
+                                                    <div class="input-box">
+                                                        <textarea name="form_message" placeholder="Your Message..."
+                                                            required=""></textarea>
+                                                    </div>
+                                                    <div class="button-box">
+                                                        <input id="form_botcheck" name="form_botcheck"
+                                                            class="form-control" type="hidden" value="">
+                                                        <button type="submit" data-loading-text="Please wait...">Send
+                                                            Message<span class="flaticon-next"></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+</div> -->
+
+<section class="section section--page contacts overflow-hidden">
+  <ul class="js-scene parallax-scene contacts__decor aos-init aos-animate" data-relative-input="true" data-aos="zoom-out" data-aos-delay="2500" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+    <li class="parallax-layer" data-depth="0.1" style="transform: translate3d(-0.6px, 8.5px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;"><i class="contacts__i-dot-green-sm"></i>
+    </li>
+    <li class="parallax-layer" data-depth="0.3" style="transform: translate3d(-1.7px, 25.6px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"><i class="contacts__i-dot-green-lg"></i>
+    </li>
+    <li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-1.1px, 17px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"><i class="contacts__i-dot-orange"></i>
+    </li>
+  </ul>
+  <div class="wrap position-relative">
+    <div class="row">
+      <div class="col-md-6 col-lg-3">
+        <h1 class="h1 text-center text-md-left contacts__title">
+          Contacts
+        </h1>
+        <div class="my-4 my-md-5 text-center text-md-left">
+          <p>{{apiService.address?.street + ', ' + apiService.address?.city + ', ' +apiService.address?.state + ', ' +
+            apiService.address?.country + ', ' + apiService.address?.pincode}}</p>
+          <p><a href="tel:39-19-67">{{apiService.phone}}</a></p>
+          <p><a href="mailto:school_pokolenie@mail.ru">{{apiService.email}}</a></p>
+        </div>
+        <div class="d-none d-lg-block b-soc">
+          <div class="b-soc__inner">
+            <a class="b-soc__item b-soc__item--vk insta" href="https://www.instagram.com/voxpopis/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a class="b-soc__item b-soc__item--fb facebook" href="https://www.facebook.com/voxpopis">
+              <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a class="b-soc__item b-soc__item--linkedin linkedin" href="https://www.linkedin.com/company/voxpop-school/">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md d-flex justify-content-center order-md-1 order-lg-0 aos-init aos-animate">
+        <svg class="clip-svg">
+          <defs>
+            <clipPath id="clipPath" clipPathUnits="objectBoundingBox">
+              <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5"></polygon>
+            </clipPath>
+          </defs>
+        </svg>
+        <div class="flex-shrink-0 contacts__map-container">
+          <div class="contacts__map" id="map">
+            <div class="gmap_canvas">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.2595746659536!2d78.36103641012429!3d17.49511809962467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb92166aaaaaab%3A0x7e5a77c944ca518b!2sVoxpop%20International%20School!5e0!3m2!1sen!2sin!4v1699882171614!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <a href="https://www.gachacute.com/">Gacha Cute</a>
+            </div>
+            
+            
+            
+          </div>
+          <!-- <i class="contacts__map-line contacts__map-line--orange"></i>
+          <i class="contacts__map-line contacts__map-line--yellow"></i> -->
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 mb-5 mb-md-0">
+        <div class="text-center text-md-right pl-md-4 pl-lg-0 contacts__route">
+          <form class="js-suggest-form" action="">
+            <input class="js-suggest form-control contacts__route-input" id="suggest" type="text" placeholder="Please indicate where you are..." required="">
+            <button class="btn btn-outline-primary dir-btn mt-4 mt-lg-0" (click)="redirectToMaps()">
+              Get directions
+            </button>
+          </form>
+        </div>
+        <div class=" d-lg-block">
+          <p>You can get all the information you are interested in if you send us a message using the feedback form below.</p>
+          <div class="pop_Up mt-5">
+            <button class="btn btn-outline-primary py-2 px-3 mt-4 mt-lg-0"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">WRITE
+                TO
+                US</button>
+        </div>
+        </div>
+      </div>
+      <!-- <div class="col-md-6 pr-md-5 d-lg-none order-md-1 text-center text-md-left mb-4 mb-md-0">
+        <p>You can get all the information you are interested in if you send us a message using the feedback form below.</p>
+        <div class="mt-4 mt-md-5">
+          <a class="btn btn--blue btn--with-line js-modal aos-init aos-animate" href="/local/templates/main/modals/modal-feedback.php" data-aos="new-animation" data-aos-delay="800">
+            Write to us</a></div>
+      </div> -->
+      <div class="col-md-6 d-lg-none order-md-1">
+        <div class="text-center text-md-right b-soc">
+          <div class="b-soc__inner">
+            <a class="b-soc__item b-soc__item--bg-alpha b-soc__item--vk" href="javascript:void(0)">
+              <svg role="img" width="1em" height="1em">
+                <use xlink:href="#si-soc-vk"></use>
+              </svg>
+            </a>
+            <a class="b-soc__item b-soc__item--bg-alpha b-soc__item--yt" href="javascript:void(0)">
+              <svg role="img" width="1em" height="1em">
+                <use xlink:href="#si-soc-yt"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="modal fade hide" id="exampleModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-5">
+      <div class="modal-header">
+
+      </div>
+      <button type="button" id="addEnquiry"  (click)="clearEnquiryData()" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <span class="modal__bg">
+        <i class="modal__bg-square"></i>
+      </span>
+
+      <span class="modal__decor">
+          <i class="modal__decor-lines"></i>
+          <i class="modal__decor-line-red"> </i>
+          <i class="modal__decor-dot-purple"></i>
+          <i class="modal__decor-dot-green"></i>
+      </span>
+      <div class="position-relative">
+          <div class="text-center modal__title">
+              <h4>Genral Enquiry </h4>
+          </div>
+
+          <form [formGroup]="FormData" (ngSubmit)="submit()" id="form-feedback">
+
+              <div class="form-group" >
+                  <input class="form-control" name="name" placeholder="Your full name *" required="required" formControlName="name">
+              </div>
+              <div class="form-group">
+                  <input class="form-control" type="email" name="email" placeholder="Your Email *" formControlName="email" required="required">
+              </div>
+              <div class="form-group">
+                  <input class="form-control" type="number" name="phoneNumber" placeholder="Enter phoneNumber *" formControlName="phoneNumber" required="required">
+              </div>
+              <div class="form-group">
+                  <textarea class="form-control" name="message" formControlName="message" placeholder="Please enter your Message*"
+                      required="required"></textarea>
+              </div>
+
+              <div class="text-center my-5">
+                  <button class="btn btn-primary" [disabled] = "!FormData.valid || isLoading" type="submit">
+              <span *ngIf="isLoading" class="spinner-border text-light" role="status"></span>
+              <span *ngIf="!isLoading"> Send</span></button>
+              </div>
+              <div class="js-form-success text-center">
+                  <h6> Thank you, your message has been sent.</h6>
+              </div>
+
+          </form>
+
+      </div>
+    </div>
+  </div>
+
+</div>

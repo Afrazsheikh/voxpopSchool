@@ -1,0 +1,300 @@
+<div class="main_container" data-aos="zoom-in" data-aos-duration="1500">
+  <ul class="js-scene parallax-scene albums__decor aos-init aos-animate" data-relative-input="true" data-aos="zoom-out" data-aos-delay="600" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+    <li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+      <i class="albums__i-dot-green"></i>
+    </li>
+    <li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+      <i class="albums__i-dot-purple"></i>
+    </li>
+    <li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+      <i class="albums__i-dot-orange aos-init" data-aos="zoom-in" data-aos-delay="900"></i>
+    </li>
+    <li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+      <i class="albums__i-circle-red aos-init" data-aos="zoom-in" data-aos-delay="500"></i>
+    </li>     
+  </ul>
+
+  <div class="wrap position-relative">
+    <div class="content-style mt-3">
+      <h1 class="h1">{{schoolData?.mainTitle}}</h1>
+    </div>
+  </div>
+
+  <div class="advantages advantages--offset">
+		<div class="wrap">
+			<ul class="row advantages__list">
+									<li class="col-sm-6 col-lg-3 text-center advantages__item aos-init aos-animate" data-aos="zoom-in" data-aos-delay="000">
+						<div class="advantages__img-wrap">
+							<img src="assets/icons/about-us1.svg" alt="">
+						</div>
+						<div class="advantages__title">
+							Individual <br> approach
+            </div>
+					</li>
+									<li class="col-sm-6 col-lg-3 text-center advantages__item aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+						<div class="advantages__img-wrap">
+							<img src="assets/icons/about-us2.svg" alt="">
+						</div>
+						<div class="advantages__title">
+							Team of <br>professionals
+            </div>
+					</li>
+									<li class="col-sm-6 col-lg-3 text-center advantages__item aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+						<div class="advantages__img-wrap">
+							<img src="assets/icons/about-us3.svg" alt="">
+						</div>
+						<div class="advantages__title">
+							Development of creative <br>potential
+            </div>
+					</li>
+									<li class="col-sm-6 col-lg-3 text-center advantages__item aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
+						<div class="advantages__img-wrap">
+							<img src="assets/icons/about-us4.svg" alt="">
+						</div>
+						<div class="advantages__title">
+							Friendly and <br>comfortable environment
+            </div>
+					</li>
+				</ul>
+		</div>
+	</div>
+
+  <section class="section__one  py-5">
+      <div class="container">
+          <div class="row mx-auto py-2">
+              <div class="col-md-6 col-12 text-center">
+                  <!-- <img class="image__div width" *ngIf="schoolData" [src]="environment.imageBaseUrl + schoolData.img1" alt=""> -->
+                  <div class="responsive-img item-projects__img-wrap aos-init aos-animate" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <img class="lazyload responsive-img " *ngIf="schoolData" [src]="environment.imageBaseUrl + schoolData.img1" alt="" data-object-fit="cover">
+                  </div>
+                  
+              </div>
+              <div
+                  class="col-12 pt-3 col-md-6 d-flex d-md-block align-items-center flex-column justify-content-center ">
+                  <h1 class="fw-bold mb-0 heading_txt">{{schoolData?.title1}}</h1>
+                  <p class="pt-2 p__text text-md-start text-center about-data">{{schoolData?.desc1}}</p>
+                  <div class="btn-div text-md-start text-center mt-4">
+                      <button class="py-2 btn btn-outline-primary px-3 mt-lg-0"
+                        (click)="setViewData(schoolData?.title1,schoolData?.desc1,environment.imageBaseUrl + schoolData.img1)"
+                        data-bs-toggle="modal" data-bs-target="#viewModal">Message
+                    </button>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </section>
+
+  <section class="section__two bg-white py-5">
+      <div class="container">
+          <div class="row mx-auto pt-3">
+              <div
+                  class="col-12 pt-3 order-2 order-md-1 col-md-6 d-flex d-md-block align-items-center flex-column justify-content-center ">
+                  <div class="btn-div mb-3 order-3 order-md-1 ">
+                      <!-- <button class="border-dark  py-1 px-3 bg-transparent rounded-pill">
+                          FREE PRIVATE SCHOOL
+                      </button> -->
+                  </div>
+                  <h1 class="fw-bold mb-0 heading_txt">{{schoolData?.title2}}</h1>
+                  <p class="pt-2 p__text text-md-start text-center about-data">{{schoolData?.desc2}}</p>
+                    <div class="mt-4">
+                      <button class="py-2 btn btn-outline-primary px-3 mt-lg-0"
+                        (click)="setViewData(schoolData?.title2,schoolData?.desc2,environment.imageBaseUrl + schoolData.img2)"
+                        data-bs-toggle="modal" data-bs-target="#viewModal">Message
+                      </button>
+                    </div>
+              </div>
+              <div class="col-md-6 col-12 order-1 order-md-2 text-center">
+                  <!-- <img class="image__div width" *ngIf="schoolData" [src]="environment.imageBaseUrl + schoolData.img2" alt=""> -->
+                  <div class="responsive-img item-projects__img-wrap aos-init aos-animate" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <img class="lazyload" *ngIf="schoolData" [src]="environment.imageBaseUrl + schoolData.img2" data-object-fit="cover">
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+  <section class="section__three pb-5">
+      <div class="container">
+          <div class="row mx-auto pt-3">
+              <div
+                  class="col-12 pt-3 order-2 col-md-6 d-flex d-md-block align-items-center flex-column justify-content-center ">
+                  <div class="btn-div mb-3  order-3 order-md-1">
+                      <!-- <button class="border-dark  py-1 px-3 bg-transparent rounded-pill">
+                          FREE PRIVATE SCHOOL
+                      </button> -->
+                  </div>
+                  <h1 class="fw-bold mb-0 heading_txt">{{schoolData?.title3}}</h1>
+                  <p class="pt-2 p__text text-md-start text-center about-data">{{schoolData?.desc3}}</p>
+                      <!-- here second model -->
+                      <div class="btn-div text-md-start text-center mt-4">
+                        <button class="py-2 btn btn-outline-primary px-3 mt-lg-0"
+                          (click)="setViewData(schoolData?.title3,schoolData?.desc3,environment.imageBaseUrl + schoolData.img3)"
+                        data-bs-toggle="modal" data-bs-target="#viewModal">Message
+                      </button>
+                    </div>
+              </div>
+              <div class="col-md-6 order-1 col-12 text-center">
+                  <!-- <img class="image__div width" *ngIf="schoolData" [src]="environment.imageBaseUrl + schoolData.img3" alt=""> -->
+                  <div class="responsive-img item-projects__img-wrap aos-init aos-animate" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                    <img class="lazyload" *ngIf="schoolData" [src]="environment.imageBaseUrl + schoolData.img3" alt="" data-object-fit="cover">
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </section>
+
+  <section class="section__two bg-white py-5">
+    <div class="container">
+        <div class="row mx-auto pt-3">
+            <div
+                class="col-12 pt-3 order-2 order-md-1 col-md-6 d-flex d-md-block align-items-center flex-column justify-content-center ">
+                <div class="btn-div mb-3 order-3 order-md-1 ">
+                    <!-- <button class="border-dark  py-1 px-3 bg-transparent rounded-pill">
+                        FREE PRIVATE SCHOOL
+                    </button> -->
+                </div>
+                <h1 class="fw-bold mb-0 heading_txt">{{schoolData?.title4}}</h1>
+                <p class="pt-2 p__text text-md-start text-center about-data">{{schoolData?.desc4}}</p>
+                  <div class="mt-4">
+                    <button class="py-2 btn btn-outline-primary px-3 mt-lg-0"
+                      (click)="setViewData(schoolData?.title4,schoolData?.desc4,environment.imageBaseUrl + schoolData.img4)"
+                      data-bs-toggle="modal" data-bs-target="#viewModal">Message
+                    </button>
+                  </div>
+            </div>
+            <div class="col-md-6 col-12 order-1 order-md-2 text-center">
+                <!-- <img class="image__div width" *ngIf="schoolData" [src]="environment.imageBaseUrl + schoolData.img4" alt=""> -->
+                <div class="responsive-img item-projects__img-wrap aos-init aos-animate" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                  <img class="lazyload" *ngIf="schoolData" [src]="environment.imageBaseUrl + schoolData.img4"data-object-fit="cover">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+
+<!-- head of principle -->
+<div class="modal fade hide" id="viewModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-5">
+        <div class="modal-header">
+
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <span class="modal__bg">
+          <i class="modal__bg-square"></i>
+        </span>
+
+        <span class="modal__decor">
+            <i class="modal__decor-lines"></i>
+            <i class="modal__decor-line-red"> </i>
+            <i class="modal__decor-dot-purple"></i>
+            <i class="modal__decor-dot-green"></i>
+        </span>
+        <div class="position-relative">
+            <div class="text-center modal__title">
+                <h4>{{viewData?.title}}</h4>
+            </div>
+
+        <p class="modal-data">{{viewData?.desc}}</p>
+
+
+      <img [src]="viewData?.img" class="messageIMG" alt="">
+
+</div>
+      </div>
+    </div>
+
+  </div>
+<!-- Gen sec message -->
+<div class="modal fade hide" id="exampleModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-5">
+        <div class="modal-header">
+
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <span class="modal__bg">
+          <i class="modal__bg-square"></i>
+        </span>
+
+        <span class="modal__decor">
+            <i class="modal__decor-lines"></i>
+            <i class="modal__decor-line-red"> </i>
+            <i class="modal__decor-dot-purple"></i>
+            <i class="modal__decor-dot-green"></i>
+        </span>
+        <div class="position-relative">
+            <div class="text-center modal__title">
+                <h4>Head Of operation</h4>
+            </div>
+
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam alias officiis,<br>
+    deleniti vero temporibus exercitationem numquam, nihil eaque neque ex cupiditate itaquebr <br>
+     eligendi iste enim nam quas illo distinctio quaerat!</p>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam alias officiis,<br>
+     deleniti vero temporibus exercitationem numquam, nihil eaque neque ex cupiditate itaquebr <br>
+      eligendi iste enim nam quas illo distinctio quaerat!</p>
+      <p>1. sampel </p>
+      <p>1. sampel </p>
+      <p>1. sampel </p>
+
+      <!-- <img src="../../assets/images/section3-video.jpg" class="messageIMG" alt=""> -->
+
+</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- third model -->
+  <!-- Gen sec message -->
+<div class="modal fade hide" id="exampleModalthree">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-5">
+        <div class="modal-header">
+
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <span class="modal__bg">
+          <i class="modal__bg-square"></i>
+        </span>
+        <i class="modal__decor-lines"></i>
+
+        <span class="modal__decor">
+            <i class="modal__decor-line-red"> </i>
+            <i class="modal__decor-dot-purple"></i>
+            <i class="modal__decor-dot-green"></i>
+        </span>
+        <div class="position-relative">
+            <div class="text-center modal__title">
+                <h4>Head Of operation</h4>
+            </div>
+
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam alias officiis,<br>
+    deleniti vero temporibus exercitationem numquam, nihil eaque neque ex cupiditate itaquebr <br>
+     eligendi iste enim nam quas illo distinctio quaerat!</p>
+
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam alias officiis,<br>
+     deleniti vero temporibus exercitationem numquam, nihil eaque neque ex cupiditate itaquebr <br>
+      eligendi iste enim nam quas illo distinctio quaerat!</p>
+      <p>1. sampel </p>
+      <p>1. sampel </p>
+      <p>1. sampel </p>
+
+      <img src="../../assets/images/section3-video.jpg" class="messageIMG" alt="">
+
+</div>
+      </div>
+    </div>
+
+  </div>

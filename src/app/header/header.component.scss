@@ -1,0 +1,198 @@
+header {
+  .vision {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: auto;
+    right: 80px;
+    left: 0;
+    bottom: 22px;
+    z-index: -1;
+
+    fa-icon {
+      min-width: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    p {
+      padding: 0 15px;
+      margin: 0;
+    }
+
+    fa-icon,
+    p {
+      border: 1px solid;
+    }
+  }
+
+  a {
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+
+/**** Media Query Styles Overrides ****/
+@media (max-width: 1200px) {
+  header {
+    .vision {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    .vision {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      fa-icon {
+        height: 26px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  header {
+    .vision {
+      flex-direction: column;
+
+      fa-icon {
+        height: 36px;
+      }
+    }
+  }
+}
+
+.navbar_container .nav_link {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+
+// header,
+// footer {
+//   font-family: Raleway;
+//   margin: 0 auto;
+//   padding: 5em 3em;
+//   text-align: center;
+//   background: #555;
+// }
+.navbar_Main {
+  // background-color: gray;
+  font-weight: bold;
+}
+
+header h1 {
+  color: #AAA;
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+
+header span {
+  color: #222;
+}
+
+footer span {
+  color: #AAA;
+}
+
+
+.link_parent a {
+  text-decoration: none;
+  padding: 10px 0;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  color: #2B2A29;
+}
+
+.active {
+  color: #f44336!important;
+}
+
+/* Top and Bottom borders go out */
+.link_parent.topBotomBordersOut a:before,
+.link_parent.topBotomBordersOut a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #2B2A29;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.link_parent.topBotomBordersOut a:before {
+  top: 0px;
+  transform: translateY(10px);
+}
+
+.link_parent.topBotomBordersOut a:after {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+
+.link_parent.topBotomBordersOut a:hover:before,
+.link_parent.topBotomBordersOut a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+// ***btn work here***
+.anim-btn {
+  width: max-content;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.anim-btn__button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #534e4a;
+  color: #534e4a;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: color 300ms ease, transform 300ms ease;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &:hover+.anim-btn__overlay,
+  &:focus+.anim-btn__overlay {
+    transform: translateY(calc(-100% + 2px));
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
+
+  &:active+.anim-btn__overlay {
+    transform: translateY(calc(-100% + 2px)) scale(0.8);
+  }
+}
+
+.anim-btn__overlay {
+  background-color: #534e4a;
+  height: calc(100% + 2px);
+  width: 100%;
+  position: absolute;
+  bottom: calc(-100% - 2px);
+  left: 0;
+  z-index: -1;
+  border-radius: 8px;
+  transition: transform 300ms ease;
+}

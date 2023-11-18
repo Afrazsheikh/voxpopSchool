@@ -1,0 +1,66 @@
+<section class="section section--page albums overflow-hidden">
+	<ul class="js-scene parallax-scene albums__decor aos-init aos-animate" data-relative-input="true" data-aos="zoom-out" data-aos-delay="600" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-dot-green"></i>
+		</li>
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-dot-purple"></i>
+		</li>
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-dot-orange aos-init" data-aos="zoom-in" data-aos-delay="900"></i>
+		</li>
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-circle-red aos-init" data-aos="zoom-in" data-aos-delay="500"></i>
+		</li>
+	</ul>
+	<div class="wrap position-relative">
+		<h1 class="h1 text-center mb-5"><span class="albums__title-text aos-init aos-animate" data-aos="new-animation">Photo gallery</span>
+		</h1>
+
+    <ng-container *ngFor="let album of albums; index as i">
+      <div class="row my-4" *ngIf="i % 3 == 0">
+        <div *ngIf="i < albums.length" class="col-xs-12 col-sm-6 col-md-4 folder" [routerLink]="['./', albums[i].albumName]">
+          <div class="img-thumbnail">
+            <img class="img-fluid rounded"
+              [src]="albums[i].images.length ? environment.imageBaseUrl + albums[i].images[albums[i].images.length - 1] :
+              'assets/images/no_image.png'" alt="Green coffee cup and saucer filled with a latte">
+            <div class="caption">
+              <h3>Explore.</h3>
+            </div>
+            <div class="year text-center">
+              <p>{{albums[i].albumName}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="(i + 1) < albums.length" class="col-xs-12 col-sm-6 col-md-4 folder" [routerLink]="['./', albums[i + 1].albumName]">
+          <div class="img-thumbnail">
+            <img class="img-fluid rounded"
+              [src]="albums[i + 1].images.length ? environment.imageBaseUrl + albums[i + 1].images[albums[i + 1].images.length - 1] :
+              'assets/images/no_image.png'" alt="Green coffee cup and saucer filled with a latte">
+            <div class="caption">
+              <h3>Explore.</h3>
+            </div>
+            <div class="year text-center">
+              <p>{{albums[i + 1].albumName}}</p>
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="(i + 2) < albums.length" class="col-xs-12 col-sm-6 col-md-4 folder" [routerLink]="['./', albums[i + 2].albumName]">
+          <div class="img-thumbnail">
+            <img class="img-fluid rounded"
+              [src]="albums[i + 2].images.length ? environment.imageBaseUrl + albums[i + 2].images[albums[i + 2].images.length - 1] :
+              'assets/images/no_image.png'" alt="Green coffee cup and saucer filled with a latte">
+            <div class="caption">
+              <h3>Explore.</h3>
+            </div>
+            <div class="year text-center">
+              <p>{{albums[i + 2].albumName}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+		</div>
+</section>

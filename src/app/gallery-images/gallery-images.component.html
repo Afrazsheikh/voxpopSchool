@@ -1,0 +1,63 @@
+<section class="section section--page albums overflow-hidden">
+	<ul class="js-scene parallax-scene albums__decor aos-init aos-animate" data-relative-input="true" data-aos="zoom-out" data-aos-delay="600" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-dot-green"></i>
+		</li>
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-dot-purple"></i>
+		</li>
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-dot-orange aos-init" data-aos="zoom-in" data-aos-delay="900"></i>
+		</li>
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-circle-red aos-init" data-aos="zoom-in" data-aos-delay="500"></i>
+		</li>
+	</ul>
+	<div class="wrap position-relative">
+    <div class="back-btn" routerLink="/gallery"><i class="fa fa-arrow-left-long"></i></div>
+		<h1 class="h1 text-center mb-5"><span class="albums__title-text aos-init aos-animate" data-aos="new-animation">
+      Photo gallery</span>
+		</h1>
+
+    <ng-container *ngFor="let image of images; index as i">
+      <div class="row" *ngIf="i % 3 == 0">
+        <div *ngIf="i < images.length" class="col-xs-12 col-sm-6 col-md-4 folder" data-bs-toggle="modal" data-bs-target="#lightbox-modal">
+          <div class="img-thumbnail">
+            <img class="img-fluid rounded" [src]="environment.imageBaseUrl + images[i]" alt="Green coffee cup and saucer filled with a latte">
+          </div>
+        </div>
+
+        <div *ngIf="(i + 1) < images.length" class="col-xs-12 col-sm-6 col-md-4 folder" data-bs-toggle="modal" data-bs-target="#lightbox-modal">
+          <div class="img-thumbnail">
+            <img class="img-fluid rounded" [src]="environment.imageBaseUrl + images[i + 1]" alt="Green coffee cup and saucer filled with a latte">
+          </div>
+        </div>
+
+        <div *ngIf="(i + 2) < images.length" class="col-xs-12 col-sm-6 col-md-4 folder" data-bs-toggle="modal" data-bs-target="#lightbox-modal">
+          <div class="img-thumbnail">
+            <img class="img-fluid rounded" [src]="environment.imageBaseUrl + images[i + 2]" alt="Green coffee cup and saucer filled with a latte">
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+  </div>
+</section>
+
+<!--Lightbox Modal Gallery-->
+<div class="modal lightbox-modal" id="lightbox-modal" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="container-fluid p-0">
+          <swiper [config]="config">
+            <ng-template swiperSlide *ngFor="let image of images">
+              <img class="img-fluid" [src]="environment.imageBaseUrl + image" alt="">
+            </ng-template>
+          </swiper>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

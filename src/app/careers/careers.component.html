@@ -1,0 +1,119 @@
+<div class="enquiry_section container overflow-hidden" data-aos="zoom-in" data-aos-duration="1500">
+    <section class="contact-address-area">
+      <span class="projects__decor projects__decor--overflow">
+        <i class="projects__i-sq-top aos-init aos-animate" data-aos="zoom-in" data-aos-delay="1000">
+        </i>
+        <i class="projects__i-sq-bot aos-init" data-aos="fade-up-right">
+        </i>
+      </span>
+      <ul class="js-scene parallax-scene projects__decor" data-relative-input="true" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+        <li class="parallax-layer" data-depth="0.1" style="transform: translate3d(-13.7px, 6px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+          <i class="projects__i-dot-green aos-init aos-animate" data-aos="zoom-out" data-aos-delay="800">
+          </i>
+        </li>
+        <li class="parallax-layer" data-depth="0.3" style="transform: translate3d(-41.1px, 18px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+          <i class="d-none d-md-block projects__i-dot-red aos-init aos-animate" data-aos="zoom-out" data-aos-delay="1200">
+          </i>
+        </li>
+        <li class="parallax-layer" data-depth="0.1" style="transform: translate3d(-13.7px, 6px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+          <i class="projects__i-circle-green aos-init" data-aos="zoom-in" data-aos-delay="200">
+          </i>
+        </li>
+      </ul>
+      <!-- <span class="projects__decor">
+        <i class="projects__i-lines-green aos-init aos-animate" data-aos="new-animation">
+        </i>
+        <i class="projects__i-triangle-yellow aos-init aos-animate" data-aos="fade-down-left" data-aos-delay="1700">
+          <svg role="img" width="1em" height="1em">
+            <use xlink:href="#si-traingle-hollow"></use>
+          </svg>
+        </i>
+      </span> -->
+
+        <div class="container pt-md-5">
+            <div class="sec-title-style1 text-center max-width">
+                <div class="text d-flex align-items-center justify-content-center">
+                    <div class="decor-left"><span></span></div>
+                    <p class="coustom_text">{{schoolData?.mainTitle}}
+                    </p>
+                    <div class="decor-right"><span></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-auto position-relative overflow-hidden box_shadow px-3 mb-md-5">
+            <div class="col-12 col-md-6 col-lg-6 sec-title-style1 pb-3">
+                <div class="bottom-text">
+                    <p>{{schoolData?.description}}</p>
+                </div>
+                <div class="pop_Up mt-5">
+                    <button class="py-2 btn btn-outline-primary px-3 mt-4 mt-lg-0"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal">WRITE
+                        TO
+                        JOIN
+                        US</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-4 position-relative mx-auto">
+                <div class="image_box">
+                    <img class="img-fluid height_width" *ngIf="schoolData" [src]="environment.imageBaseUrl + schoolData.img" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div class="modal fade hide" id="exampleModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-5">
+      <div class="modal-header">
+
+      </div>
+      <button type="button" class="btn-close"  id="addEnquiry"  (click)="clearEnquiryData()" data-bs-dismiss="modal" aria-label="Close"></button>
+      <span class="modal__bg">
+        <i class="modal__bg-square"></i>
+      </span>
+
+      <span class="modal__decor">
+          <i class="modal__decor-lines"></i>
+          <i class="modal__decor-line-red"> </i>
+          <i class="modal__decor-dot-purple"></i>
+          <i class="modal__decor-dot-green"></i>
+      </span>
+      <div class="position-relative">
+          <div class="text-center modal__title">
+              <h4>feedback</h4>
+          </div>
+
+          <form  [formGroup]="FormData" (ngSubmit)="submit()" id="form-feedback">
+
+            <div class="form-group" >
+              <input class="form-control" name="name" placeholder="Your full name *" required="required" formControlName="name">
+          </div>
+          <div class="form-group">
+              <input class="form-control" type="email" name="email" placeholder="Your Email *" formControlName="email" required="required">
+          </div>
+          <div class="form-group">
+              <input class="form-control" type="number" name="phoneNumber" placeholder="Enter phoneNumber *" formControlName="phoneNumber" required="required">
+          </div>
+          <div class="form-group">
+              <textarea class="form-control" name="message" formControlName="message" placeholder="Please enter your Message*"
+                  required="required"></textarea>
+          </div>
+
+          <div class="text-center my-5">
+              <button class="btn btn-primary" [disabled] = "!FormData.valid || isLoading" type="submit">
+          <span *ngIf="isLoading" class="spinner-border text-light" role="status"></span>
+          <span *ngIf="!isLoading"> Send</span></button>
+          </div>
+              <div class="js-form-success text-center">
+                  <h6> Thank you, your message has been sent.</h6>
+              </div>
+
+          </form>
+
+      </div>
+    </div>
+  </div>
+
+</div>

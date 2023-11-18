@@ -1,0 +1,9 @@
+.news-data {
+  text-overflow: ellipsis;
+  max-height: 90px;
+  overflow: hidden;
+  padding: 16px 0;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}

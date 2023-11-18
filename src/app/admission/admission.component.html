@@ -1,0 +1,141 @@
+<div class="body_content overflow-hidden">
+  <!-- ************************************************first-block*********************************************************** -->
+  <ul class="js-scene parallax-scene albums__decor aos-init aos-animate" data-relative-input="true" data-aos="zoom-out" data-aos-delay="600" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-dot-green"></i>
+		</li>
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-dot-purple"></i>
+		</li>
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-dot-orange aos-init" data-aos="zoom-in" data-aos-delay="900"></i>
+		</li>
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-circle-red aos-init" data-aos="zoom-in" data-aos-delay="500"></i>
+		</li>
+	</ul>
+
+  <div class="container wrap position-relative">
+    <h1 class="h1 mb-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+      <span class="school__title-text">School Enrollment  <br> </span></h1>
+    <div class="content-style">
+      <p>Admission of students to kindergarten and school is carried out on a competitive basis based on the results of the input diagnostics - an interview with a psychologist and a primary school teacher for intellectual potential and readiness for learning.</p>
+      <p>Before entering primary school, the child is interviewed. We will not meticulously test it. We'll just talk. About what he likes to do, what fascinates him, about friends, favorite activities and other entertaining things. Later we will offer several tests, while taking care that the baby is interested in working with them. Older children will get more difficult tests, but here we will make sure that in case of failure, the child would not feel upset.</p>
+      <p>We may need several meetings to get a reliable impression of the child's level of preparation. Our school works according to a rather complex program, and when accepting a child in the second or higher grade, it is important for us to make sure that he can feel comfortable there. Often, if a child's level of preparation does not match the level of the class, we will offer a program of additional activities that will help the child bridge the gap..</p>
+    </div>
+   </div>
+
+   <div class="container-fluid stages">
+    <div class="wrap position-relative">
+      <ol class="stages__list">
+                <li class="stages__item">
+            <div class="stages__item-num aos-init aos-animate" data-aos="fade-down"><span>step</span></div>
+            <div class="stages__item-content aos-init aos-animate" data-aos="fade-in" data-aos-delay="500" data-aos-easing="ease-in-sine">
+              <div class="h2 stages__item-title">
+                {{schoolData?.step1Title}}
+              </div>
+              <div class="stages__item-text" [innerHtml]="schoolData?.step1Desc">
+                <!-- <p>
+                  {{schoolData?.step1Desc}}
+                </p> -->
+                <!-- <p id="collapseDiv1" class="collapse">
+                  Located within 322 m of Central Park and Columbus
+                  Circle metro station, this boutique hotel features
+                  an interior lobby garden with trees and ivy walls.
+                  Guests can enjoy convenience of concierge services
+                  and a fitness center.<br /><br />Guests can relax
+                  with a game of billiards, or catch up with family
+                  and friends on business center computers
+                </p>
+                <button class="btn btn-outline-primary mt-3" type="button" (click)="readMore=(readMore == 1 ? 0 : 1);"
+                  data-bs-toggle="collapse" data-bs-target="#collapseDiv1">
+                  {{ readMore == 1 ? 'Read Less': 'Read More' }}
+              </button> -->
+              </div>
+
+              </div>
+          </li>
+                  <li class="stages__item">
+            <div class="stages__item-num aos-init aos-animate" data-aos="fade-down"><!-- <span>step</span> --></div>
+            <div class="stages__item-content aos-init aos-animate" data-aos="fade-in" data-aos-delay="500" data-aos-easing="ease-in-sine">
+              <div class="h2 stages__item-title">{{schoolData?.step2Title}}</div>
+              <div class="stages__item-text" [innerHTML]="schoolData?.step2Desc">
+                <!-- <p>
+                  {{schoolData?.step2Desc}}
+                </p>
+                <p id="collapseDiv2" class="collapse">
+                  Located within 322 m of Central Park and Columbus
+                  Circle metro station, this boutique hotel features
+                  an interior lobby garden with trees and ivy walls.
+                  Guests can enjoy convenience of concierge services
+                  and a fitness center.<br /><br />Guests can relax
+                  with a game of billiards, or catch up with family
+                  and friends on business center computers
+                </p>
+                <button class="btn btn-outline-primary mt-3" type="button" (click)="readMore=(readMore == 2 ? 0 : 2);"
+                  data-bs-toggle="collapse" data-bs-target="#collapseDiv2">
+                  {{ readMore == 2 ? 'Read Less': 'Read More' }}
+              </button> -->
+
+
+              </div>
+            </div>
+          </li>
+          <li class="stages__item">
+            <div class="stages__item-num aos-init aos-animate" data-aos="fade-down"><!-- <span>step</span> --></div>
+            <div class="stages__item-content aos-init aos-animate" data-aos="fade-in" data-aos-delay="500" data-aos-easing="ease-in-sine">
+              <div class="h2 stages__item-title">{{schoolData?.step3Title}}</div>
+              <div class="stages__item-text" [innerHTML]="schoolData?.step3Desc">
+                <!-- <p>
+                  {{schoolData?.step3Desc}}
+                </p>
+                <p id="collapseDiv3" class="collapse">
+                  Located within 322 m of Central Park and Columbus
+                  Circle metro station, this boutique hotel features
+                  an interior lobby garden with trees and ivy walls.
+                  Guests can enjoy convenience of concierge services
+                  and a fitness center.<br /><br />Guests can relax
+                  with a game of billiards, or catch up with family
+                  and friends on business center computers
+                </p>
+                <button class="btn btn-outline-primary mt-3" type="button" (click)="readMore=(readMore == 3 ? 0 : 3);"
+                  data-bs-toggle="collapse" data-bs-target="#collapseDiv3">
+                  {{ readMore == 3 ? 'Read Less': 'Read More' }}
+              </button> -->
+
+                </div>
+            </div>
+          </li>
+          <li class="stages__item">
+            <div class="stages__item-num aos-init aos-animate" data-aos="fade-down"><!-- <span>step</span> --></div>
+            <div class="stages__item-content aos-init aos-animate" data-aos="fade-in" data-aos-delay="500" data-aos-easing="ease-in-sine">
+            <div class="h2 stages__item-title">{{schoolData?.step4Title}}</div>
+            <div class="stages__item-text" [innerHTML]="schoolData?.step4Desc">
+              <!-- <p>
+                {{schoolData?.step4Desc}}
+              </p>
+              <p id="collapseDiv4" class="collapse">
+                Located within 322 m of Central Park and Columbus
+                Circle metro station, this boutique hotel features
+                an interior lobby garden with trees and ivy walls.
+                Guests can enjoy convenience of concierge services
+                and a fitness center.<br /><br />Guests can relax
+                with a game of billiards, or catch up with family
+                and friends on business center computers
+              </p>
+              <button class="btn btn-outline-primary mt-3" type="button" (click)="readMore=(readMore == 4 ? 0 : 4);"
+                data-bs-toggle="collapse" data-bs-target="#collapseDiv4">
+                {{ readMore == 4 ? 'Read Less': 'Read More' }}
+            </button> -->
+
+
+            </div>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+   </div>
+
+
+</div>

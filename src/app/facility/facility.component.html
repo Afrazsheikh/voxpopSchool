@@ -1,0 +1,90 @@
+<div class="container">
+  <ul class="js-scene parallax-scene albums__decor aos-init aos-animate" data-relative-input="true" data-aos="zoom-out" data-aos-delay="600" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-dot-green"></i>
+		</li>
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-dot-purple"></i>
+		</li>
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-dot-orange aos-init" data-aos="zoom-in" data-aos-delay="900"></i>
+		</li>
+		<li class="parallax-layer" data-depth="0.2" style="transform: translate3d(-21.3px, 23.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+			<i class="albums__i-circle-red aos-init" data-aos="zoom-in" data-aos-delay="500"></i>
+		</li>
+	</ul>
+  <div class="py-5 title" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+    <h1>{{schoolData.mainTitle}}</h1>
+    <p>
+   {{schoolData.mainDesc}}
+    </p>
+  </div>
+
+  <div class="row" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="main-content">
+        <h2 class="text-center">{{schoolData.titleLeft}}</h2>
+        <h3>{{schoolData.titleSubLeft1}}</h3>
+        <p>{{schoolData.summaryL1}}</p>
+        <h3>{{schoolData.titleSubLeft2}}</h3>
+        <p>{{schoolData.summaryL2}}</p>
+        <h3>{{schoolData.titleSubLeft3}}</h3>
+        <p>{{schoolData.summaryL3}}</p>
+        <h3>{{schoolData.titleSubLeft4}}</h3>
+        <p>{{schoolData.summaryL4}}</p>
+        <h3>{{schoolData.titleSubLeft5}}</h3>
+        <p>{{schoolData.summaryL4}}</p>
+       
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="main-content">
+        <h2 class="text-center">{{schoolData.titleRight}}</h2>
+        <!-- <p>Our modern Science labs are fully equipped to meet the needs of our Secondary and Senior Secondary students.</p> -->
+        <h3 class="text-start">{{schoolData.titleSubRight1}}</h3>
+        <p class="text-start">{{schoolData.desc1}}</p>
+        <h3 class="text-start">{{schoolData.titleSubRight2}}</h3>
+        <p class="text-start">{{schoolData.desc2}}.</p>
+        <h3 class="text-start">{{schoolData.titleSubRight3}}</h3>
+        <p class="text-start">{{schoolData.desc3}}</p>
+        <h2 class="text-center">{{schoolData.titleSubRight4}}</h2>
+        <p>{{schoolData.desc4}}</p>
+        <!-- <ul>
+            <li class="text-start">Indoor sports facilities</li>
+            <li class="text-start">Badminton and Basketball provision</li>
+            <li class="text-start">Tennis courts</li>
+            <li class="text-start">Standard Soccer field</li>
+        </ul> -->
+        <h3 class="text-start">{{schoolData.titleSubRight5}}</h3>
+
+        <p>{{schoolData.desc5}}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery-cont" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
+    <h1 class="text-center mb-3">Gallery of our Facilities</h1>
+    <div class="row">
+      <div class="col-12 col-sm-2 col-md-4 col-lg-4 p-0 gal-img-cont">
+        <img class="img-fluid"  [src]="environment.imageBaseUrl + schoolData.imgF1"   alt="">
+      </div>
+      <div class="col-12 col-sm-2 col-md-4 col-lg-4 p-0 gal-img-cont">
+        <img class="img-fluid" [src]="environment.imageBaseUrl + schoolData.imgF2" alt="">
+      </div>
+      <div class="col-12 col-sm-2 col-md-4 col-lg-4 p-0 gal-img-cont">
+        <img class="img-fluid" [src]="environment.imageBaseUrl + schoolData.imgF3"alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-2 col-md-4 col-lg-4 p-0 gal-img-cont">
+        <img class="img-fluid" [src]="environment.imageBaseUrl + schoolData.imgF4" alt="">
+      </div>
+      <div class="col-12 col-sm-2 col-md-4 col-lg-4 p-0 gal-img-cont">
+        <img class="img-fluid" [src]="environment.imageBaseUrl + schoolData.imgF5" alt="">
+      </div>
+      <div class="col-12 col-sm-2 col-md-4 col-lg-4 p-0 gal-img-cont">
+        <img class="img-fluid" [src]="environment.imageBaseUrl + schoolData.imgF6" alt="">
+      </div>
+    </div>
+  </div>
+</div>

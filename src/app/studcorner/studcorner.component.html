@@ -1,0 +1,124 @@
+<section class="section section--page projects overflow-hidden">
+	<span class="projects__decor projects__decor--overflow">
+		<i class="projects__i-sq-top aos-init aos-animate" data-aos="zoom-in" data-aos-delay="1000">
+		</i>
+		<i class="projects__i-sq-bot aos-init" data-aos="fade-up-right">
+		</i>
+	</span>
+	<ul class="js-scene parallax-scene projects__decor" data-relative-input="true" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+		<li class="parallax-layer" data-depth="0.1" style="transform: translate3d(-13.7px, 6px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+			<i class="projects__i-dot-green aos-init aos-animate" data-aos="zoom-out" data-aos-delay="800">
+			</i>
+		</li>
+		<li class="parallax-layer" data-depth="0.3" style="transform: translate3d(-41.1px, 18px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+			<i class="d-none d-md-block projects__i-dot-red aos-init aos-animate" data-aos="zoom-out" data-aos-delay="1200">
+			</i>
+		</li>
+		<li class="parallax-layer" data-depth="0.1" style="transform: translate3d(-13.7px, 6px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+			<i class="projects__i-circle-green aos-init" data-aos="zoom-in" data-aos-delay="200">
+			</i>
+		</li>
+	</ul>
+	<span class="projects__decor">
+		<i class="projects__i-lines-green aos-init aos-animate" data-aos="new-animation">
+		</i>
+		<i class="projects__i-triangle-yellow aos-init aos-animate" data-aos="fade-down-left" data-aos-delay="1700">
+			<svg role="img" width="1em" height="1em">
+				<use xlink:href="#si-traingle-hollow"></use>
+			</svg>
+		</i>
+	</span>
+	<div class="wrap position-relative">
+		<h1 class="h1 mb-4 projects__title">{{schoolData?.mainTitle}}</h1>
+		<!-- <div class="row mb-5">
+			<div class="col-lg-8">
+			</div>
+		</div> -->
+	<ul class="projects__list">
+	  <li class="projects__item">
+				<div class="item-projects">
+					<div class="row">
+						<div class="col-md-5 col-lg-6 item-projects__col-1">
+							<div class="responsive-img item-projects__img-wrap aos-init aos-animate" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+								<img class="lazyload" *ngIf="schoolData" [src]="environment.imageBaseUrl + schoolData.img1" alt="" data-object-fit="cover">
+							</div>
+						</div>
+						<div class="col-md-7 col-lg-6 align-self-center align-self-lg-stretch item-projects__col-2">
+							<div class="item-projects__content">
+								<div class="mb-3 item-projects__title"><a href="/vnutrennie-proekty-shkoly/pokolenie-vybiraet-chtenie/">{{schoolData?.title1}}</a>
+								</div>
+								<div class="mb-4 item-projects__text">
+                  {{schoolData?.desc1}}<br>
+                </div>
+								<!-- <a class="item-projects__more-link" href="/vnutrennie-proekty-shkoly/pokolenie-vybiraet-chtenie/">To learn more</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li class="projects__item">
+				<div class="item-projects">
+					<div class="row">
+						<div class="col-md-5 col-lg-6 item-projects__col-1">
+							<div class="responsive-img item-projects__img-wrap aos-init aos-animate" href="/vnutrennie-proekty-shkoly/pisma-direktora/" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+								<img class="lazyload" *ngIf="schoolData" [src]="environment.imageBaseUrl + schoolData.img2" alt="" data-object-fit="cover">
+							</div>
+						</div>
+						<div class="col-md-7 col-lg-6 align-self-center align-self-lg-stretch item-projects__col-2">
+							<div class="item-projects__content">
+								<div class="mb-3 item-projects__title"><a href="/vnutrennie-proekty-shkoly/pisma-direktora/">{{schoolData?.title2}}</a>
+								</div>
+								<div class="mb-4 item-projects__text">
+                  {{schoolData?.desc2}}</div>
+								<!-- <a class="item-projects__more-link" href="/vnutrennie-proekty-shkoly/pisma-direktora/">To learn more</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li class="projects__item">
+				<div class="item-projects">
+					<div class="row">
+						<div class="col-md-5 col-lg-6 item-projects__col-1">
+							<div class="responsive-img item-projects__img-wrap aos-init" href="/vnutrennie-proekty-shkoly/proforietatsionnaya-rabota/" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+								<img class="lazyload" *ngIf="schoolData" [src]="environment.imageBaseUrl + schoolData.img3" alt="" data-object-fit="cover">
+							</div>
+						</div>
+						<div class="col-md-7 col-lg-6 align-self-center align-self-lg-stretch item-projects__col-2">
+							<div class="item-projects__content">
+								<div class="mb-3 item-projects__title"><a href="/vnutrennie-proekty-shkoly/proforietatsionnaya-rabota/">{{schoolData?.title3}}</a>
+								</div>
+								<div class="mb-4 item-projects__text">
+                  {{schoolData?.desc3}}</div>
+								<!-- <a class="item-projects__more-link" href="/vnutrennie-proekty-shkoly/proforietatsionnaya-rabota/">To learn more</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li class="projects__item">
+				<div class="item-projects">
+					<div class="row">
+						<div class="col-md-5 col-lg-6 item-projects__col-1">
+							<div class="responsive-img item-projects__img-wrap aos-init" href="/vnutrennie-proekty-shkoly/kind-chool/" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+								<img class="lazyload" *ngIf="schoolData" [src]="environment.imageBaseUrl + schoolData.img4" alt="" data-object-fit="cover">
+							</div>
+						</div>
+						<div class="col-md-7 col-lg-6 align-self-center align-self-lg-stretch item-projects__col-2">
+							<div class="item-projects__content">
+								<div class="mb-3 item-projects__title"><a href="/vnutrennie-proekty-shkoly/kind-chool/">{{schoolData?.title4}}</a>
+								</div>
+								<div class="mb-4 item-projects__text">{{schoolData?.desc4}}</div>
+								<!-- <a class="item-projects__more-link" href="/vnutrennie-proekty-shkoly/kind-chool/">To learn more</a> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+	</ul>
+
+</div>
+</section>

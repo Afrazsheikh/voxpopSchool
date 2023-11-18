@@ -1,0 +1,21 @@
+.folder {
+  cursor: pointer;
+}
+
+.img-thumbnail {
+  position: relative;
+  text-align: center;
+}
+ .img-thumbnail img {
+  transition: transform .8s;
+  transform-origin: 0,0;
+  object-fit: cover;
+  height: 300px;
+}
+
+.back-btn {
+  i {
+    font-size: 40pt;
+    cursor: pointer;
+  }
+}
