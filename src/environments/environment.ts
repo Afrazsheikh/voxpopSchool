@@ -4,12 +4,20 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://localhost:3030/api/v1/',
-  imageBaseUrl: 'http://localhost:3030/api/v1/uploads/',
-  // apiBaseUrl: 'http://localhost:3000/api/v1/',
-  // imageBaseUrl: 'http://localhost:3000/api/v1/uploads/',
-  documentUrl: 'http://localhost:3030/api/v1/documents/',
+  // apiBaseUrl: 'http://localhost:3030/api/v1/',
+  // imageBaseUrl: 'http://localhost:3030/api/v1/uploads/',
+  // documentUrl: 'http://localhost:3030/api/v1/documents/',
+
+
+  // apiBaseUrl: 'https://13.126.126.170/api/v1/',
+  // imageBaseUrl: 'http://13.126.126.170/api/v1/uploads/',
+  documentUrl: 'http://13.126.126.170/api/v1/documents/',
+
+  apiBaseUrl: 'backend.voxpopschool.com/api/v1/',
+  imageBaseUrl: 'backend.voxpopschool.com/api/v1/uploads/',
   // apiBaseUrl: 'http://13.126.126.170/api/v1/',
+
+  
   // imageBaseUrl: 'http://13.126.126.170/api/v1/uploads/',
   // documentUrl: 'http://13.126.126.170/api/v1/documents/',
   // apiBaseUrl: 'http://13.126.126.170/api/v1/',

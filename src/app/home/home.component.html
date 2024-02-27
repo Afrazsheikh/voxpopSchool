@@ -23,7 +23,7 @@
                   </a>
                   <div class="rhombus__img-romb">
                     <div class="responsive-img rhombus__img-romb-wrap">
-                      <img class="swiper-lazy swiper-lazy-loaded" [src]="environment.imageBaseUrl + slide.slideImg2" alt="" data-object-fit="cover">
+                      <img class="swiper-lazy swiper-lazy-loaded sideImage" [src]="environment.imageBaseUrl + slide.slideImg2" alt="" data-object-fit="cover">
 
                     </div>
                   </div><i class="rhombus__line aos-init aos-animate" data-aos="new-animation" data-aos-delay="1200"></i>
@@ -321,7 +321,7 @@
 	</span>
 	<div class="wrap">
 		<div class="text-center mb-3 mb-sm-5">
-			<h2 class="h1">Events</h2>
+			<h2 class="h1">Gallery</h2>
 		</div>
 				<div class="b-grid">
 			<ul class="row js-masonry js-gallery b-grid__list">
@@ -466,126 +466,7 @@
 		</div>
 	</div>
 </section>
-
-<section class="section b-partners">
-  <div class="b-partners__bg"></div>
-  <div class="wrap position-relative">
-    <div class="title text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-      <h5>{{schoolData?.section7.title}}</h5>
-      <h1>{{schoolData?.section7.subTitle}}</h1>
-    </div>
-    <div class="row">
-      <div class="col-12 col-md-4 col-lg-4">
-        <div class="exp-info" data-aos="zoom-out-right" data-aos-delay="100" data-aos-duration="1000">
-          <div class="img-cont text-center">
-            <img *ngIf="schoolData" class="img-fluid" [src]="environment.imageBaseUrl + schoolData.section7.topLeftImage" alt="">
-            <p>{{schoolData?.section7.topLeftText}}</p>
-          </div>
-
-          <div class="img-cont text-center">
-            <img *ngIf="schoolData" class="img-fluid" [src]="environment.imageBaseUrl + schoolData.section7.bottomLeftImage" alt="">
-            <p>{{schoolData?.section7.bottomLeftText}}</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-4">
-        <div class="exp-logo" data-aos="zoom-out-right" data-aos-delay="100" data-aos-duration="1000">
-          <img *ngIf="schoolData" class="img-fluid" [src]="environment.imageBaseUrl + schoolData.section7.centerImage" alt="">
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-4">
-        <div class="exp-info" data-aos="zoom-out-right" data-aos-delay="100" data-aos-duration="1000">
-          <div class="img-cont text-center">
-            <img *ngIf="schoolData" class="img-fluid" [src]="environment.imageBaseUrl + schoolData.section7.topRightImage" alt="">
-            <p>{{schoolData?.section7.topRightText}}</p>
-          </div>
-
-          <div class="img-cont text-center">
-            <img *ngIf="schoolData" class="img-fluid" [src]="environment.imageBaseUrl + schoolData.section7.bottomRightImage" alt="">
-            <p>{{schoolData?.section7.bottomRightText}}</p>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="col-md-9 col-lg-10">
-        <swiper #swiper3 [config]="config3">
-          <ng-template swiperSlide>
-            <div class="b-partners__slide" style="order: 0; width: 225.75px; margin-right: 20px;">
-              <a href="https://assnvlg.ru">
-              <img src="assets/images/carouselImg1.png" alt="Association" title="Association"></a>
-            </div>
-          </ng-template>
-          <ng-template swiperSlide>
-            <div class="b-partners__slide" style="-webkit-box-ordinal-group: 5; order: 5; margin-top: 20px; width: 225.75px; margin-right: 20px;">
-              <a href="https://rybakovfond.ru/">
-                <img src="assets/images/carouselImg2.png" alt="Rybakov" title="Association"></a>
-            </div>
-          </ng-template>
-          <ng-template swiperSlide>
-            <div class="b-partners__slide" style="-webkit-box-ordinal-group: 1; order: 1; width: 225.75px; margin-top: 30px; margin-right: 20px;">
-              <a href="http://asnoor.ru/">
-                <img src="assets/images/carouselImg3.png" alt="Asnoor" title="Association"></a>
-            </div>
-          </ng-template>
-          <ng-template swiperSlide>
-            <div class="b-partners__slide" style="-webkit-box-ordinal-group: 6; order: 6; margin-top: 20px; width: 225.75px; margin-right: 20px;">
-              <a href="http://www.rusreadorg.ru/">
-                <img src="assets/images/carouselImg1.png" alt="Russian Reading Association" title="Russian Reading Association"></a>
-            </div>
-          </ng-template>
-          <ng-template swiperSlide>
-            <div class="b-partners__slide" style="-webkit-box-ordinal-group: 2; order: 2; width: 225.75px; margin-top: 30px; margin-right: 20px;">
-              <a href="https://hse.ru">
-                <img src="assets/images/carouselImg2.png" alt="HSE" title="HSE"></a>
-            </div>
-          </ng-template>
-          <ng-template swiperSlide>
-            <div class="b-partners__slide" style="-webkit-box-ordinal-group: 7; order: 7; margin-top: 20px; width: 225.75px; margin-right: 20px;">
-              <a href="https://mgimo.ru/">
-              <img src="assets/images/carouselImg3.png" alt="MGIMO" title="MGIMO"></a>
-            </div>
-          </ng-template>
-          <ng-template swiperSlide>
-            <div class="b-partners__slide" style="-webkit-box-ordinal-group: 3; order: 3; width: 225.75px; margin-right: 20px;">
-              <a href="http://misis.ru/">
-              <img src="assets/images/carouselImg1.png" alt="misis" title="misis"></a>
-            </div>
-          </ng-template>
-          <ng-template swiperSlide>
-            <div class="b-partners__slide" style="-webkit-box-ordinal-group: 8; order: 8; margin-top: 20px; width: 225.75px; margin-right: 20px;">
-              <a href="http://www.rudn.ru/">
-              <img src="assets/images/carouselImg2.png" alt="RUDN University" title="RUDN University"></a>
-            </div>
-          </ng-template>
-          <ng-template swiperSlide>
-            <div class="b-partners__slide" style="-webkit-box-ordinal-group: 3; order: 3; width: 225.75px; margin-right: 20px;">
-              <a href="http://misis.ru/">
-              <img src="assets/images/carouselImg1.png" alt="misis" title="misis"></a>
-            </div>
-          </ng-template>
-        </swiper>
-      </div>
-      <div class="col-md-3 col-lg-2 d-flex align-items-end justify-content-end">
-        <div class="d-flex align-items-center">
-          <button class="b-partners__prev swiper-button-disabled" type="button" tabindex="0" role="button"
-            aria-label="Previous slide" aria-disabled="true" (click)="slidePartPrev()">
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <span class="b-partners__pagination swiper-pagination-fraction"><span class="swiper-pagination-current">1</span> / <span class="swiper-pagination-total">2</span></span>
-          <button class="b-partners__next" type="button" tabindex="0" role="button" aria-label="Next slide"
-            aria-disabled="false" (click)="slidePartNext()">
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
-        </div>
-      </div> -->
-    </div>
-  </div>
-  <ul class="js-scene parallax-scene b-partners__decor" data-relative-input="true" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
-    <li class="parallax-layer" data-depth="0.1" style="transform: translate3d(-13.8px, 92.9px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;"><i class="b-partners__particle b-partners__particle--dot-purple aos-init" data-aos="zoom-in"></i>
-    </li>
-    <li class="parallax-layer" data-depth="0.3" style="transform: translate3d(-41.4px, 278.6px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;"><i class="b-partners__particle b-partners__particle--circle-green aos-init" data-aos="zoom-in"></i>
-    </li>
-  </ul><span class="b-partners__decor"><i class="b-partners__particle b-partners__particle--line-purple aos-init" data-aos="new-animation"></i></span>
-</section>
+<!-- section7 is here  -->
 
 <!--Lightbox Modal Gallery-->
 <div class="modal lightbox-modal" id="lightbox-modal" tabindex="-1">
