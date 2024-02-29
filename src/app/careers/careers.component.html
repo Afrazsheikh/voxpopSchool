@@ -82,7 +82,7 @@
       </span>
       <div class="position-relative">
           <div class="text-center modal__title">
-              <h4>feedback</h4>
+              <h4>Join us</h4>
           </div>
 
           <form  [formGroup]="FormData" (ngSubmit)="submit()" id="form-feedback">
@@ -104,10 +104,10 @@
           <div class="text-center my-5">
               <button class="btn btn-primary" [disabled] = "!FormData.valid || isLoading" type="submit">
           <span *ngIf="isLoading" class="spinner-border text-light" role="status"></span>
-          <span *ngIf="!isLoading"> Send</span></button>
+          <span *ngIf="!isLoading"> Submit</span></button>
           </div>
               <div class="js-form-success text-center">
-                  <h6> Thank you, your message has been sent.</h6>
+                  <h6> Once you submit, We'll contact you soon</h6>
               </div>
 
           </form>

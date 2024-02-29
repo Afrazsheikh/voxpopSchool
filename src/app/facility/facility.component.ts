@@ -32,7 +32,7 @@ export class FacilityComponent implements OnInit {
       this.schoolData = resp.schoolData.facility;
       this.images =  resp.schoolData.facility.imgF1    
       this.images2 =  resp.schoolData.facility.imgF2   
-      this.images3 =  resp.schoolData.facility.imgzF3  
+      this.images3 =  resp.schoolData.facility.imgF3  
       this.images4 =  resp.schoolData.facility.imgF4
       this.images5 =  resp.schoolData.facility.imgF5
       this.images6 =  resp.schoolData.facility.imgF6
@@ -40,7 +40,7 @@ export class FacilityComponent implements OnInit {
 
 
 
-      console.log("facility",this.schoolData, this.images2);
+      console.log("facility",this.schoolData, this.images6);
     },
     (err) => {
       console.error(err);
